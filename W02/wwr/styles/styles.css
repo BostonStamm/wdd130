@@ -1,9 +1,15 @@
 #content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 1600px;
     margin: 0 auto;
 }
 
+#logolink {
+    padding-top: 5px;
+}
+
 nav a {
+    padding: 35px;
     text-align: center;
     color: black;
     text-decoration: none;
@@ -11,6 +17,10 @@ nav a {
 
 #hero-msg h1, #heromsg h4 {
     text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
 }
 
 .button-box {
@@ -26,7 +36,14 @@ main section {
 }
 
 body {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
     background-color: #29335C;
+}
+
+h2 {
+    margin: 0;
 }
 
 header{
@@ -39,25 +56,39 @@ nav a:hover{
 }
 
 .book, .join{
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #F5B841;
     color: black;
     text-decoration: none;
 }
 
 .book:hover, .join:hover{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #8C705f;
     color: black;
 }
 
 .msg{
+    padding: 10px;
+    line-height: 1.5em;
     background-color: #F5B841;
 }
 
 footer{
+    margin-top: 200px;
+    padding: 25px 50px;
     background-color: #F5B841;
 }
 
 .home-title{
+    margin-top: 10px;
+    font-size: 2em;
     color: black;
 }
 
@@ -70,6 +101,8 @@ h4{
 }
 
 .msg p{
+    padding-bottom: 15px;
+    font-size: .8em;
     color: black;
 }
 
@@ -82,10 +115,23 @@ footer a{
     text-decoration: none;
 }
 
+footer .social img{
+    padding-top: 15px;
+}
+
 footer a:hover{
     color: #8C705f;
 }
 
 .icon {
+    padding-top: 10px;
     width: 80px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
 }

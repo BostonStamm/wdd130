@@ -1,0 +1,31 @@
+body{
+    background-color: #3E5641;
+}
+.content{
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 20px 20px 20px;
+    grid-template-rows: 20px 20px 20px 20px 20px 20px 20px;
+}
+.icon{
+    grid-area: icon;
+
+}
+.navbar{
+    grid-area: navbar;
+    text-align: center;
+    border: 3px;
+    border
+}
+.sublinks{
+    grid-area: sublinks;
+}
+.navbuttons{
+ 
+}
+.mediabar{
+ grid-area: mediabar;
+ 
+}
+.social{
+
+}

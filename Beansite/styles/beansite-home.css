@@ -1,31 +1,77 @@
 body{
     background-color: #3E5641;
 }
-.content{
+#content{
     display: grid;
-    grid-template-columns: 20px 20px 20px 20px 20px 20px 20px;
-    grid-template-rows: 20px 20px 20px 20px 20px 20px 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+header{
+    margin: 1rem auto 3rem;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
 }
 .icon{
-    grid-area: icon;
-
+    position: absolute;
+    left: 10%;
+    max-height: 80px;
+    aspect-ratio: 1/1;
 }
 .navbar{
-    grid-area: navbar;
+    margin: 0 calc(80px + 10vw);
+    max-width: calc(100vw - (160px + 20vw));
     text-align: center;
     border: 3px;
-    border
 }
 .sublinks{
-    grid-area: sublinks;
+    /* grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr  2fr  2fr;
+    column-gap: 30px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    
 }
-.navbuttons{
- 
+footer{
+    position: absolute;
+    bottom: 10px;
+}
+.navbuttons a img{
+    max-height: 160px;
+    aspect-ratio: auto;
 }
 .mediabar{
- grid-area: mediabar;
- 
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+.contact{
+    grid-column: 1;
 }
 .social{
-
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+.social a{
+    margin: 0 10px;
+}
+.mediabar h3{
+    text-align: center;
+}
+.mediabar :last-child{
+    grid-column: 2;
+    grid-row: 2;
+}
+div {
+outline: 1px dashed #fff;
 }

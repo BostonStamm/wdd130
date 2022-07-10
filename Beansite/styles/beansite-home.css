@@ -42,7 +42,7 @@ header{
     background-color: antiquewhite;
 }
  .tooltip{
-     position: relative; 
+    position: relative; 
     display: inline-block;
     border-bottom: 1px dotted black;
 } 

@@ -47,28 +47,28 @@ header{
     flex-basis: 50%;
     gap: 4vw; */
 }
-.sublinks:nth-child(1){
+.sublinks :nth-child(1){
+    grid-area: 1 / 2 / 2 / 3;
+}
+.sublinks :nth-child(2){
     grid-area: 1 / 3 / 2 / 4;
 }
-.sublinks:nth-child(2){
-    grid-area: 1 / 3 / 2 / 4;
-}
-.sublinks:nth-child(3){
+.sublinks :nth-child(3){
     grid-area: 1 / 4 / 2 / 5;
 }
-.sublinks:nth-child(4){
+.sublinks :nth-child(4){
     grid-area: 1 / 5 / 2 / 6;
 }
-.sublinks:nth-child(5){
+.sublinks :nth-child(5){
     grid-area: 2 / 2 / 3 / 3;
 }
-.sublinks:nth-child(6){
+.sublinks :nth-child(6){
     grid-area: 2 / 3 / 3 / 4;
 }
-.sublinks:nth-child(7){
+.sublinks :nth-child(7){
     grid-area: 2 / 4 / 3 / 5;
 }
-.sublinks:nth-child(8){
+.sublinks :nth-child(8){
     grid-area: 2 / 5 / 3 / 6;
 }
 .navbuttons{
@@ -129,7 +129,12 @@ footer{
     display: flex; 
     flex-direction: row;
     justify-content: center;
-    align-items: center;    
+    align-items: center; 
+    border-right: solid;
+    border-bottom: solid;
+    border-left: solid;
+    border-width: 2px;
+    border-color: black;   
 }
 .social a{
     margin: 0 10px;
@@ -153,6 +158,6 @@ a:hover{
 a:active{
     color: grey;
 }
-div {
+/* div {
 outline: 1px dashed #fff;
-}
+} */

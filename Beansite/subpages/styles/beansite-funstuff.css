@@ -17,10 +17,20 @@ header{
     flex-direction: row;
 }
 .icon{
+    background-color: #baecfd;
+    border: 2px solid #88e1ff;
+    border-radius: 50%;
+    align-self: center;
     position: absolute;
     left: 10%;
     max-height: 80px;
     aspect-ratio: 1/1;
+    -webkit-transition: border, .1s;
+    transition-delay: .1s;
+}
+.icon:hover{
+    border-radius: 50%;
+    box-shadow: 0 0 16px 8px #ff8;
 }
 .navbar{
     border-radius: 25px;
@@ -30,6 +40,13 @@ header{
     max-width: calc(100vw - (160px + 30vw));
     text-align: center;
     border: 3px;
+}
+main{
+    margin-bottom: 10.5vh;
+}
+main:after{
+    content: "";
+    display: block;
 }
 .sublinks{
     display: grid;
@@ -59,7 +76,6 @@ header{
  .tooltip{
      position: relative; 
     display: inline-block;
-    border-bottom: 1px dotted black;
 } 
 .tooltip .tooltiptext{
     visibility: hidden;
@@ -84,13 +100,12 @@ header{
     opacity: 1;
 }
 footer{
-    position: absolute;
-    bottom: 10px;
-    width: 100vw;
+    position: static;
+    bottom: 0;
+    width: 100%;
 }
 .mediabar{
     background-color: #520808;
-    margin: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -106,9 +121,23 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;    
+    border-right: solid;
+    border-bottom: solid;
+    border-left: solid;
+    border-width: 2px;
+    border-color: black;  
 }
+
 .social a{
+    max-height: 64px;
     margin: 0 10px;
+    padding: 0;
+    -webkit-transition: border, .1s;
+    transition-delay: .1s;
+    text-decoration: none;
+}
+.social a img:hover{
+    border: 3px solid #a21f1f17;
 }
 .mediabar h3{
     text-align: center;

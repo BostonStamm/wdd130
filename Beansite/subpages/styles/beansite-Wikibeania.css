@@ -87,6 +87,7 @@ main:after{
 .textbox-main{
     display: block;
     margin: 0 20px;
+    padding-bottom: 20px;
     background-color: #d6fffa;
     min-height: 30rem;
 }

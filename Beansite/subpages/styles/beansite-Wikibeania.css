@@ -2,16 +2,17 @@ body {
     background-color: #c8fcf5;
     margin: 0;
 }   
-.content{
+/* .content{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 10% 70%;
 
-}
+} */
 
 header{
+    padding: 3vh;
     background-color: #dcfffa;
-    grid-row: 1 / 2;
+    /* grid-row: 1 / 2; */
     grid-column: auto;
     display: flex;
 }
@@ -21,7 +22,7 @@ header{
     border-radius: 50%;
     align-self: center;
     position: absolute;
-    left: 5%;
+    left: 5vh;
     max-height: 80px;
     aspect-ratio: 1/1;
     -webkit-transition: border, .1s;
@@ -74,9 +75,18 @@ header{
     transition-delay: .5;
 }
 
+
+
+
+
+/*MAIN INFORMATION*/
+
+
+
+
 main{
-    grid-row: 2 / 3;
-    grid-column: auto;
+    /* grid-row: 2 / 3;
+    grid-column: auto; */
     margin-bottom: 20vh;
     display: block;
 }
